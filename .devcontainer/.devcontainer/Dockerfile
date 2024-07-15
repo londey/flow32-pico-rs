@@ -19,6 +19,12 @@ RUN rustup component add llvm-tools-preview
 RUN cargo install cargo-binutils
 RUN rustup target add thumbv6m-none-eabi
 
+# Clone and build elf2uf2-rs
+RUN git clone https://github.com/rp-rs/elf2uf2-rs.git && \
+    cd elf2uf2-rs && \
+    cargo build --release && \
+    mv target/release/elf2uf2 /usr/local/bin/
+
 # Setup environment for ARM cross-compilation (adjust as needed)
 ENV CC_arm_none_eabi=arm-none-eabi-gcc \
     AR_arm_none_eabi=arm-none-eabi-ar
