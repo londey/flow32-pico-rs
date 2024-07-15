@@ -1,0 +1,19 @@
+// .devcontainer/devcontainer.json
+{
+    "name": "Rust for Raspberry Pi Pico",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "settings": { 
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "rust-lang.rust-analyzer",
+        "vadimcn.vscode-lldb",
+        "mutantdino.resourcemonitor"
+    ],
+    "forwardPorts": [],
+    "postCreateCommand": "cargo check",
+    "remoteUser": "root"
+}
