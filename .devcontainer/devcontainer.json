@@ -17,7 +17,8 @@
         "serayuzgur.crates",
         "tamasfe.even-better-toml",
         "streetsidesoftware.code-spell-checker",
-        "Asuka.insertnumbers"
+        "Asuka.insertnumbers",
+        "ms-azuretools.vscode-docker"
     ],
     "forwardPorts": [],
     "postCreateCommand": "cargo check",
