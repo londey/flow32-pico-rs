@@ -11,7 +11,13 @@
     "extensions": [
         "rust-lang.rust-analyzer",
         "vadimcn.vscode-lldb",
-        "mutantdino.resourcemonitor"
+        "mutantdino.resourcemonitor",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "serayuzgur.crates",
+        "tamasfe.even-better-toml",
+        "streetsidesoftware.code-spell-checker",
+        "Asuka.insertnumbers"
     ],
     "forwardPorts": [],
     "postCreateCommand": "cargo check",
