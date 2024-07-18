@@ -1,0 +1,13 @@
+[package]
+name = "flow32_pico_rs"
+version = "0.1.0"
+edition = "2021"
+
+# Dependencies for embedded development
+[dependencies]
+cortex-m = "0.7.3" # Core dependency for ARM Cortex-M microcontrollers
+cortex-m-rt = "0.7.0" # Startup and runtime for Cortex-M microcontrollers
+panic-halt = "0.2.0" # Panic behavior, halts on panic
+
+# RP2040 specific dependencies
+rp2040-hal = "0.10.2" # Hardware Abstraction Layer for the RP2040

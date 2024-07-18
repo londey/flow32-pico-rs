@@ -1,0 +1,10 @@
+[workspace]
+members = ["app"]
+
+
+
+[profile.release]
+panic = "abort"
+
+[profile.dev]
+panic = "abort"
